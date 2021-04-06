@@ -14,7 +14,7 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity {
     private TextView prova1, prova2, prova3, mf, st;
     private Button calcular, limpar, enviar;
-
+    private int cor = Color.parseColor("#FF0000");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-            int cor = Color.parseColor("#FF0000");
+            cor = Color.parseColor("#FF0000");
             if (resultado >= 6.0) {
                 sitacao = "Aprovado";
                 cor = Color.parseColor("#0000FF");
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             st.setTextColor(cor);
 
         } catch (Exception e) {
-            int cor = Color.parseColor("#FF00FF");
+            cor = Color.parseColor("#FF00FF");
             e.printStackTrace();
             st.setText("Inválido");
             st.setTextColor(cor);
@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("prova3", prova3.getText().toString());
         intent.putExtra("mediafinal", mf.getText().toString());
         intent.putExtra("status", st.getText().toString());
+        intent.putExtra("cor", cor);
         startActivity(intent);
     }
 }

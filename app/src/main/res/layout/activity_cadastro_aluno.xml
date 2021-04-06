@@ -29,7 +29,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/p1"
+                android:id="@+id/p12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -45,7 +45,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/p2"
+                android:id="@+id/p22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -58,7 +58,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/p3"
+                android:id="@+id/p32"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -72,7 +72,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/mediaFinal"
+            android:id="@+id/mediaFinal2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Média Final"
@@ -82,7 +82,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/status"
+            android:id="@+id/status2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Status"
@@ -94,27 +94,69 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btCalcular"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/nomeDisciplina"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="CALCULAR" />
+                android:ems="10"
+                android:hint="Nome da Disciplina"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
 
-            <Button
-                android:id="@+id/btLimpar"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/nomeAluno"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="LIMPAR" />
+                android:ems="10"
+                android:hint="Nome do Aluno"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/nFaltas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Número de Faltas"
+                android:inputType="number"
+                android:textSize="24sp" />
+
         </LinearLayout>
 
         <Button
-            android:id="@+id/btEnviar"
+            android:id="@+id/btCompartilhar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ENVIAR" />
+            android:text="COMPARTILHAR" />
+
+        <TextView
+            android:id="@+id/resultado2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titulo6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marcos Felipe Soares Rocha\nRejane de Lima e Silva"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
